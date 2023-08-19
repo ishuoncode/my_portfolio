@@ -14,8 +14,8 @@ export default function Contact() {
         <div className="mb-[2rem] mt-[1.5rem] h-[412px] w-[100%] overflow-x-auto rounded-[0.5rem] border-[1px] text-[0.85rem] leading-[1.25rem] md:h-[370px]">
           <table className="w-full text-left text-sm ">
             <thead className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
-              <tr className="text-[#EDE9FE]">
-                <th scope="col" className="px-6 py-3 text-[1.05rem]">
+              <tr className="  text-[black]">
+                <th scope="col" className="px-6 py-3 text-[1.05rem] ">
                   Social Media
                 </th>
                 <th scope="col" className="py-3 pl-28 text-[1.05rem]">

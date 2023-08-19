@@ -23,7 +23,7 @@ export default function About() {
         viewport={{ once: false, amount: 0.25 }}
         className=" mx-auto flex w-full flex-col gap-8 lg:flex-row "
       >
-        <section className="mxs:ml-[7%] mt-[60px]  flex justify-between">
+        <section className="mxs:ml-[7%] ml-[4%] mt-[60px]  flex justify-between">
           <div className="mt-[16px] h-[400px] flex-1 items-center ">
             <TypingText title="| About " textStyles={'w-[250px]'} />
 
@@ -57,11 +57,11 @@ export default function About() {
             <div className="mt-[50px] flex sm:w-[500px] w-[257px] cursor-pointer items-center justify-items-center">
               <div>
                 {/* <button className={`${buttonStyle}`}>Get in Touch</button> */}
-                <Link href="/Contact">
+                 <a href="/Contact" > 
                   <button className="rounded-[10px] bg-indigo-500 p-[10px] font-semibold  text-white hover:bg-[#4a4fef]">
                     Get in Touch
                   </button>
-                </Link>
+                </a>
               </div>
               <div className="ml-[20px]">
                 <a
@@ -99,7 +99,7 @@ export default function About() {
           </div>
         </section>
       </motion.div>
-      <div className="  mxs:mx-[7%] mt-[50px] w-auto flex-col gap-8">
+      <div className="  mxs:mx-[7%]  mt-[50px] w-auto flex-col gap-8">
         <p className="text-gray-400">Current favorite tech stack/tools:</p>
         <div className="mt-[15px] flex w-[300px] items-start justify-start">
           {ReactSVG}

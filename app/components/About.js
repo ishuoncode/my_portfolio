@@ -101,7 +101,7 @@ export default function About() {
           </div>
         </section>
       </motion.div>
-      <div className="  mxs:mx-[7%]  mt-[50px] w-auto flex-col gap-8">
+      <div className="  mxs:mx-[7%] ml-[4%] mt-[50px] w-auto flex-col gap-8">
         <p className="text-gray-400">Current favorite tech stack/tools:</p>
         <div className="mt-[15px] flex w-[300px] items-start justify-start">
           {ReactSVG}

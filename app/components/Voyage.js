@@ -1,20 +1,27 @@
 'use client';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { roll180, fadeIn } from '@/utils/motion';
 import { TypingText } from './CustomText';
 import { VoyageFeatures } from '@/constant/data';
 import { check } from '@/constant/svgFile';
 import Link from 'next/link';
+import useWindowWidth from '@/hooks/WindowWidth';
 
 export default function Voyage() {
   const [changeImageNumber, setImageNumberHandler] = useState('1');
+  
+  const windowWidth = useWindowWidth();
+
   const setImage = () => {
     changeImageNumber === '1'
       ? setImageNumberHandler('2')
       : setImageNumberHandler('1');
   };
+
+
+  
   return (
     <motion.div
       // variants={staggerContainer}
@@ -28,7 +35,7 @@ export default function Voyage() {
       style={{zIndex:"-1"}}></div>
       <div className=" lg:flex h-[400px] ">
         <div className=" lg:flex-1 ">
-          <motion.div variants={roll180(0.3, 1)}>
+          {windowWidth < 492 ? <motion.div variants={fadeIn('right', 'tween', 0.2, 1)}>
             <div className="  xl:mx-[20%] lg:mx-[7%] " style={{zIndex:"10"}}>
               {' '}
               <Image
@@ -41,7 +48,21 @@ export default function Voyage() {
                 
               />
             </div>
-          </motion.div>
+          </motion.div>:<motion.div variants={roll180( 0.3, 1)}>
+            <div className="  xl:mx-[20%] lg:mx-[7%] " style={{zIndex:"10"}}>
+              {' '}
+              <Image
+                src={`/assest/Voyage-${changeImageNumber}.png`}
+                alt={`Voyage-${changeImageNumber}`}
+                height={700}
+                width={500}
+                className=" h-[334px] w-auto mx-auto cursor-pointer rounded-[15px]  "
+                onClick={setImage}
+                
+              />
+            </div>
+          </motion.div>}
+          
         </div>
         <div className="lg:mt-[-87px] mt-[76px] flex-1">
           <div className="text-center">
@@ -52,7 +73,7 @@ export default function Voyage() {
               {VoyageFeatures.map((feature, index) => (
                 <motion.div
                   key={index}
-                  variants={fadeIn('bottom', 'spring', index * 0.5, 0.75)}
+                  variants={fadeIn('bottom', 'spring', index * 0.3, 0.75)}
                 >
                   <div className="relative right-[30px] top-[25px]">
                     {check}

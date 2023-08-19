@@ -15,7 +15,7 @@ import Link from 'next/link';
 export default function About() {
   return (
     <>
-      <div className=" absolute   sm:left-[52%] left-[23%] sm:top-[40%] top-[27%]  h-[50vh] w-[204px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px] lg:left-[60%] lg:top-[21%] lg:h-[70vh] lg:w-[300px]"
+      <div className=" absolute   sm:left-[52%] left-[13%] sm:top-[40%] top-[19%]  h-[50vh] w-[204px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px] lg:left-[60%] lg:top-[21%] lg:h-[70vh] lg:w-[300px]"
       style={{zIndex:"-1"}}></div>
       <motion.div
         variants={staggerContainer}

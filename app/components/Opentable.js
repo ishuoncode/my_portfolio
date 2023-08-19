@@ -23,7 +23,8 @@ export default function OpenTable() {
       viewport={{ once: false, amount: 0.25 }}
       className=" relative lg:h-[650px] sm:h-[1058px] xs:h-[1355px]  "
     >
-        <div className=" absolute lg:right-[125px] right-[170px] lg:top-[-103px] top-[428px] z-0 lg:h-[500px] h-[400px]  w-[400px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px]"></div>
+        <div className=" absolute lg:right-[125px] right-[170px] lg:top-[-103px] top-[428px]  lg:h-[500px] h-[400px]  w-[400px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px]"
+        style={{zIndex:"-1"}}></div>
       <div className="lg:flex  h-[400px]">
         <div className="mt-[-80px] lg:flex-1">
        
@@ -47,13 +48,13 @@ export default function OpenTable() {
           </div>
           <Link href="https://open-table-git-master-ishuoncode.vercel.app/">
             <button
-              className={`ml-[85px] mt-[30px] w-[200px] rounded-[10px] bg-indigo-500 p-[10px] font-semibold  text-white hover:bg-[#4a4fef]`}
+              className={`ml-[85px] mt-[30px] w-[200px] rounded-[10px] bg-indigo-500 p-[10px] font-semibold  text-white hover:bg-[#4a4fef] z-10`}
             >
               Click to visit
             </button>
           </Link>
         </div>
-        <div className="z-[1] lg:flex-1 ">
+        <div className="z-[1] lg:flex-1 " style={{zIndex:"10"}}>
           <div className=" lg:ml-[0px] mt-[100px] lg:mt-[0px] w-[100%] ">
           
             <motion.div variants={roll180(0.3, 1,-180)}>

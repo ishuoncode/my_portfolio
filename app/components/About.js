@@ -15,7 +15,8 @@ import Link from 'next/link';
 export default function About() {
   return (
     <>
-      <div className=" absolute   sm:left-[52%] left-[23%] sm:top-[40%] top-[27%] z-0 h-[50vh] w-[204px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px] lg:left-[60%] lg:top-[21%] lg:h-[70vh] lg:w-[300px]"></div>
+      <div className=" absolute   sm:left-[52%] left-[23%] sm:top-[40%] top-[27%]  h-[50vh] w-[204px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px] lg:left-[60%] lg:top-[21%] lg:h-[70vh] lg:w-[300px]"
+      style={{zIndex:"-1"}}></div>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -54,7 +55,8 @@ export default function About() {
               who loves intuitive,
               clean and modern UI design.
             </p>
-            <div className="mt-[50px] flex sm:w-[500px] w-[257px]  items-center justify-items-center">
+            <div className="mt-[50px] flex sm:w-[500px] w-[257px]  items-center justify-items-center"
+            style={{zIndex:"10"}}>
               <div className='cursor-pointer'>
                 {/* <button className={`${buttonStyle}`}>Get in Touch</button> */}
                  <a href="/Contact" > 
@@ -63,7 +65,7 @@ export default function About() {
                   </button>
                 </a>
               </div>
-              <div className="ml-[20px] cursor-ponter">
+              <div className="ml-[20px] cursor-ponter ">
                 <a
                   className="flex"
                   href="https://drive.google.com/file/d/1p72uUYCW8iLbL__Qv32L0Miml_C5lzbu/view?usp=drive_link"

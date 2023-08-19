@@ -24,7 +24,7 @@ export default function Voyage() {
       className="relative lg:h-[710px] sm:h-[1058px] sm:h-[1140px] h-[1450px] flex-col"
     >
       {/* <div className=' absolute h-[500px] w-[400px] left-[300px] mt-[20px] top-[20px]  z-[2] bg-[green] rotate-[-53.13deg]'></div> */}
-      <div className=" absolute sm:left-[101px] xs:left-[-138px] sm:top-[-173px] xs:top-[-260px] z-0 h-[500px]  min-h-screen md:w-[400px] w-[200px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px]"
+      <div className=" absolute sm:left-[101px] xs:left-[-138px] left-[-83px] sm:top-[-173px] xs:top-[-260px] z-0 h-[500px]  min-h-screen md:w-[400px] w-[200px] rotate-[-53.13deg] bg-[#2d4898bf] blur-[200px]"
       style={{zIndex:"-1"}}></div>
       <div className=" lg:flex h-[400px] ">
         <div className=" lg:flex-1 ">

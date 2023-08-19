@@ -54,8 +54,8 @@ export default function About() {
               who loves intuitive,
               clean and modern UI design.
             </p>
-            <div className="mt-[50px] flex sm:w-[500px] w-[257px] cursor-pointer items-center justify-items-center">
-              <div>
+            <div className="mt-[50px] flex sm:w-[500px] w-[257px]  items-center justify-items-center">
+              <div className='cursor-pointer'>
                 {/* <button className={`${buttonStyle}`}>Get in Touch</button> */}
                  <a href="/Contact" > 
                   <button className="rounded-[10px] bg-indigo-500 p-[10px] font-semibold  text-white hover:bg-[#4a4fef]">
@@ -63,7 +63,7 @@ export default function About() {
                   </button>
                 </a>
               </div>
-              <div className="ml-[20px]">
+              <div className="ml-[20px] cursor-ponter">
                 <a
                   className="flex"
                   href="https://drive.google.com/file/d/1p72uUYCW8iLbL__Qv32L0Miml_C5lzbu/view?usp=drive_link"

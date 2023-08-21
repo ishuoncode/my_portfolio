@@ -177,6 +177,7 @@ export const roll180 = (delay, duration,rotate=180) => ({
       delay,
       duration,
     },
+    
   },
 });
 

@@ -58,8 +58,8 @@ export default function OpenTable() {
           </Link>
         </div>
         <div className="z-[1] lg:flex-1 " style={{ zIndex: '10' }}>
-          <div className=" mt-[100px] w-[100%] lg:ml-[0px] lg:mt-[0px] ">
-            {windowWidth < 492 ? (
+          <div className=" mt-[100px] w-[100%] lg:ml-[0px] lg:mt-[0px] lg:max-w-max-content xl:ml-[18%] lg:absolute lg:right-[6%]">
+            {windowWidth < 990 ? (
               <motion.div variants={fadeIn('right', 'tween', 0.2, 1)}>
                 <Image
                   src={`/assest/OpenTable-${changeImageNumber}.png`}
@@ -71,14 +71,15 @@ export default function OpenTable() {
                 />
               </motion.div>
             ) : (
-              <motion.div variants={roll180(0.3, 1, -180)}>
+              <motion.div variants={roll180(0.3, 1, -180)} className='ml-[20%]'>
                 <Image
                   src={`/assest/OpenTable-${changeImageNumber}.png`}
                   alt={`OpenTable-${changeImageNumber}`}
                   height={700}
                   width={500}
-                  className=" z-[1] mx-auto h-[334px]  w-auto cursor-pointer rounded-[15px] lg:w-[500px] xl:mr-[20%] "
+                  className=" z-[1] mx-auto  h-[334px]  w-auto cursor-pointer rounded-[15px] lg:w-[500px] xl:mr-[20%] "
                   onClick={setImage}
+                  
                 />
               </motion.div>
             )}

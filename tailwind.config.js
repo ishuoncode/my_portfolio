@@ -19,6 +19,9 @@ module.exports = {
         "llg": '990px',
         ...defaultTheme.screens,
       },
+      maxWidth: {
+        'max-content': 'max-content',
+      },
     },
   },
   plugins: [],

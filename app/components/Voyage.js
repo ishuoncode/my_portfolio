@@ -35,7 +35,7 @@ export default function Voyage() {
       style={{zIndex:"-1"}}></div>
       <div className=" lg:flex h-[400px] ">
         <div className=" lg:flex-1 ">
-          {windowWidth < 492 ? <motion.div variants={fadeIn('right', 'tween', 0.2, 1)}>
+          {windowWidth < 990 ? <motion.div variants={fadeIn('right', 'tween', 0.2, 1)}>
             <div className="  xl:mx-[20%] lg:mx-[7%] " style={{zIndex:"10"}}>
               {' '}
               <Image

@@ -69,7 +69,7 @@ export default function About() {
               <div className="ml-[20px] cursor-ponter ">
                 <a
                   className="flex"
-                  href="https://drive.google.com/file/d/1NGAYcadnT74QkiYJ-W-micK4T_KLT39D/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1p4BrnJXERlDcnFMr3oSxQhtoV0KGdTZx/view?usp=drive_link"
                   target="_blank"
                 >
                   <svg

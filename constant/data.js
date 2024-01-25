@@ -6,12 +6,21 @@ export const VoyageFeatures= [
     "Credit card Payment using STRIPE."
 ]
 
+<<<<<<< HEAD
 export const UnchiudaanFeatures=[
     "Unchiudaan is an education-based portal from which users can learn about current affairs, read news, take tests to assess their knowledge,and get monthly pdfs via free and paid access.",
     "Authentication and Authorization.",
     "Filter pdfs by Category.",
     "Give test to test your knowledge.",
     "Download monthly pdfs via free and paid access."
+=======
+export const OpenTableFeatures=[
+    "OpenTable is an online platform that allows users to search for and make reservations at restaurants in real-time availability systems. Build on Next.js.",
+    "Authentication and Authorization.",
+    "Filter Restaurant by Name, Region, Cuisine, Price.",
+    "Search the availability of tables at a particular restaurant.",
+    "Fill out the booker's details and book a table."
+>>>>>>> 6da5ea73839d869f664772efdb9f526bfa1515c5
 ]
 
 export const QualitiesData=[

@@ -9,7 +9,8 @@ import {
   ReactSVG,
   TailwindSVG,
   vscode,
-  NestSVG
+  NestSVG,
+  mongo
 } from '@/constant/svgFile';
 import Link from 'next/link';
 
@@ -111,7 +112,10 @@ export default function About() {
 
           {TailwindSVG}
           {vscode}
-          {NestSVG}
+          <div className='h-[185px] w-[185px] relative top-[-3px]'>
+          {mongo}
+          </div>
+          {/* {NestSVG} */}
         </div>
       </div>
     </>

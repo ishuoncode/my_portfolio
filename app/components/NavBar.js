@@ -34,7 +34,7 @@ export default function NavBar() {
               </span>
             </Link>
             <a
-              href="https://drive.google.com/file/d/1aIBxdCfDIHh5L8Cqf0Nx2Z18MAPkvoxb/view?usp=sharing"
+              href="https://drive.google.com/file/d/1euVWoFUGhQUOaXRxTMqqH5wL1Uj3RVRB/view?usp=drive_link"
               target="_blank"
             >
               <span className="animation-hover relative inline-block cursor-pointer duration-500 hover:scale-[1.2] sm:px-2.5 sm:py-2.5 md:px-5 md:py-2">

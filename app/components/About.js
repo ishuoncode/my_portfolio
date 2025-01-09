@@ -44,7 +44,7 @@ export default function About() {
               title={
                 <p className="mt-[-7px] sm:w-[453px] w-[323px] text-[#ede9fe]">
                   I&apos;m{' '}
-                  <span className="font-bold text-indigo-400">Ishu</span> Singh,
+                  <span className="font-bold text-indigo-400">Ishu,</span>
                 </p>
               }
               textStyles={'w-[300px]'}
